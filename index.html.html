@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Kantharia | Data Scientist & AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#5eead4',
+                            DEFAULT: '#14b8a6',
+                            dark: '#0d9488',
+                        },
+                        secondary: {
+                            light: '#a5b4fc',
+                            DEFAULT: '#6366f1',
+                            dark: '#4f46e5',
+                        },
+                        dark: {
+                            light: '#334155',
+                            DEFAULT: '#1e293b',
+                            dark: '#0f172a',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, #14b8a6, #6366f1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute inset-0 bg-grid-dark opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-dark/50 to-dark-dark/80"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-card fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold gradient-text">MAK</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <!-- <a href="#home" class="text-primary-light hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium">Home</a> -->
+                        <a href="#home" class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-lg font-medium">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-lg font-medium">About</a>
+                        <a href="#skills" class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-lg font-medium">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-lg font-medium">Projects</a>
+                        <a href="#contact" class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-lg font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-6xl font-bold">
+                        <span class="gradient-text">Mayank Kantharia</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-gray-300">
+                        Data Scientist & AI Engineer
+                    </h2>
+                    <p class="text-lg text-gray-400 max-w-lg">
+                        Transforming complex data into actionable insights through machine learning and artificial intelligence.
+                    </p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#projects" class="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center space-x-2">
+                            <span>View Projects</span>
+                            <i class="mdi mdi-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden md:block">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"></div>
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"></div>
+                    <div class="relative w-full h-96 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform rotate-6"></div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform -rotate-6"></div>
+                        <div class="relative w-80 h-80 bg-dark rounded-2xl overflow-hidden border border-gray-700 shadow-2xl flex items-center justify-center">
+                            <div class="text-9xl">
+                              <!-- <img src="https://wallpaperaccess.com/full/1704529.jpg" alt=""> -->
+                              <img src="1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="glass-card p-8 rounded-2xl">
+                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                    <p class="text-gray-300 mb-6">
+                        I'm a passionate data scientist with expertise in machine learning, deep learning, and data engineering. 
+                        With a strong foundation in mathematics and computer science, I specialize in building intelligent 
+                        systems that extract meaningful insights from complex datasets.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        My approach combines technical excellence with business acumen, ensuring that my solutions 
+                        deliver real value and impact. I thrive in interdisciplinary environments where I can apply 
+                        data science to solve challenging problems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="flex items-center text-primary hover:text-primary-light">
+                            <i class="mdi mdi-file-account text-xl mr-2"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="https://github.com/mayankkantharia" target="_blank" class="flex items-center text-primary hover:text-primary-light">
+                            <i class="mdi mdi-github text-xl mr-2"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-primary-light mb-2">
+                                <i class="mdi mdi-school text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Education</h4>
+                            <p class="text-sm text-gray-400">
+                                Master's in Data Science with specialization in Machine Learning and AI.
+                            </p>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-primary-light mb-2">
+                                <i class="mdi mdi-briefcase text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Experience</h4>
+                            <p class="text-sm text-gray-400">
+                                5+ years building data products and machine learning solutions.
+                            </p>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-primary-light mb-2">
+                                <i class="mdi mdi-database text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Data Processed</h4>
+                            <p class="text-sm text-gray-400">
+                                TBs of structured and unstructured data across domains.
+                            </p>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl">
+                            <div class="text-primary-light mb-2">
+                                <i class="mdi mdi-chart-bar text-3xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Models Built</h4>
+                            <p class="text-sm text-gray-400">
+                                50+ production-grade ML models deployed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-b from-dark-dark to-dark text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold mb-4">Technical <span class="gradient-text">Skills</span></h2>
+          <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+
+        <!-- Glassmorphic Card Container -->
+        <div class="glass-card p-6 rounded-2xl backdrop-blur-md shadow-md border border-gray-700 bg-white/5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 text-sm text-gray-300">
+
+            <!-- Data Science & AI -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                  <i class="mdi mdi-brain text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Data Science & AI</h3>
+              </div>
+              <ul class="space-y-2">
+                  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" class="h-5">
+                  <img src="https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white" alt="R" class="h-5">
+                  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="h-5">
+                  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="h-5">
+                  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="h-5">                  
+                  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="h-5">                  
+                  <img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="h-5">                  
+                  <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="h-5">                  
+                  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="h-5">                  
+                  <img src="https://img.shields.io/badge/Seaborn-30B7F5?logo=seaborn&logoColor=white" alt="Seaborn" class="h-5">
+                  <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau" class="h-5">                  
+                  <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black" alt="Power BI" class="h-5">                  
+              </ul>
+            </div>
+
+            <!-- Databases & Storage -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                  <i class="mdi mdi-database text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Databases & Storage</h3>
+              </div>
+              <ul class="space-y-2">
+                <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL" class="h-5">
+                <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white" alt="PostgreSQL" class="h-5">
+                <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" class="h-5">
+                <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite" class="h-5">
+              </ul>
+            </div>
+
+            <!-- Cloud & Big Data -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                  <i class="mdi mdi-cloud-outline text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Cloud & Big Data</h3>
+              </div>
+              <ul class="space-y-2">
+                <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white" alt="AWS" class="h-5">                
+                <img src="https://img.shields.io/badge/Hadoop-66CCFF?logo=apache-hadoop&logoColor=white" alt="Hadoop" class="h-5">
+                <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="h-5">
+
+              </ul>
+            </div>
+
+            <!-- Full Stack Development -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                  <i class="mdi mdi-web text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-semibold">Full Stack Dev</h3>
+              </div>
+              <ul class="space-y-2">
+                <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" class="h-5">
+                <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white" alt="Django" class="h-5">
+                <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React" class="h-5">
+                <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white" alt="Flask" class="h-5">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" class="h-5">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" class="h-5">
+                <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" class="h-5">
+                <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind" class="h-5">
+                <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white" alt="Bootstrap" class="h-5">
+              </ul>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div>
+              <div class="flex items-center mb-4">
+                  <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                      <i class="mdi mdi-cellphone text-3xl text-primary"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold">Mobile App Development</h3>
+              </div>
+              <ul class="space-y-2">              
+                <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter" class="h-5">                            
+                <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" alt="Dart" class="h-5">              
+              </ul>
+            </div>
+
+            <!-- Tools & DevOps -->
+            <div>
+              <div class="flex items-center mb-4">
+                  <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                      <i class="mdi mdi-tools text-3xl text-primary"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold">Tools & DevOps</h3>
+              </div>
+              <ul class="space-y-2">                
+                <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="h-5">                                
+                <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" class="h-5">                                
+                <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual-studio-code&logoColor=white" alt="VS Code" class="h-5">                                
+                <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git" class="h-5">                
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <i class="mdi mdi-brain text-7xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Brain Tumor Detection</h3>
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Deep Learning</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">
+                            A 3D CNN model for detecting and classifying brain tumors from MRI scans with 96% accuracy.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">Python</span>
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">TensorFlow</span>
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">OpenCV</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-primary hover:text-primary-light text-sm flex items-center">
+                                <i class="mdi mdi-github mr-1"></i> Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-primary-light text-sm flex items-center">
+                                <i class="mdi mdi-open-in-new mr-1"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <i class="mdi mdi-finance text-7xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Stock Prediction</h3>
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Time Series</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">
+                            LSTM-based model for stock price prediction with sentiment analysis from news articles.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">Python</span>
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">PyTorch</span>
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">NLP</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-primary hover:text-primary-light text-sm flex items-center">
+                                <i class="mdi mdi-github mr-1"></i> Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-primary-light text-sm flex items-center">
+                                <i class="mdi mdi-open-in-new mr-1"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <i class="mdi mdi-chat-processing text-7xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold">Chatbot Assistant</h3>
+                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">NLP</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Context-aware chatbot using transformer architecture with domain-specific knowledge.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">Python</span>
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">HuggingFace</span>
+                            <span class="text-xs bg-dark-light px-2 py-1 rounded-full">Flask</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-primary hover:text-primary-light text-sm flex items-center">
+                                <i class="mdi mdi-github mr-1"></i> Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-primary-light text-sm flex items-center">
+                                <i class="mdi mdi-open-in-new mr-1"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300">
+                    <span>View All Projects</span>
+                    <i class="mdi mdi-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-dark to-dark-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="mdi mdi-email text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <a href="mailto:mayankkantharia01@gmail.com" class="text-gray-400 hover:text-primary transition">mayankkantharia01@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="mdi mdi-github text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">GitHub</h4>
+                                <a href="https://github.com/mayankkantharia" target="_blank" class="text-gray-400 hover:text-primary transition">github.com/mayankkantharia</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="mdi mdi-linkedin text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" class="text-gray-400 hover:text-primary transition">linkedin.com/in/mayankkantharia</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h3 class="text-xl font-semibold mb-6">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                <i class="mdi mdi-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                <i class="mdi mdi-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                <i class="mdi mdi-github text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                <i class="mdi mdi-medium text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                            <input type="text" id="name" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="email" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+                                                        <input type="text" id="subject" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="w-full px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-gray-800 text-center text-sm text-gray-500 bg-dark">
+        <p>&copy; 2025 Mayank Kantharia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
