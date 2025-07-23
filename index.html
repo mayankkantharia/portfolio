@@ -6,27 +6,49 @@
     <title>Mayank Kantharia | Data Scientist & AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <style>
+        .skill-tag {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #cbd5e1; /* slate-300 */
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background-color: rgba(94, 234, 212, 0.1);
+            color: #5eead4; /* primary */
+            border-color: rgba(94, 234, 212, 0.2);
+            transform: translateY(-2px);
+        }
+        .nav-active {
+            color: #5eead4 !important; /* using !important to override tailwind specificity */
+            font-weight: 700;
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        primary: {
-                            light: '#5eead4',
-                            DEFAULT: '#14b8a6',
-                            dark: '#0d9488',
-                        },
-                        secondary: {
-                            light: '#a5b4fc',
-                            DEFAULT: '#6366f1',
-                            dark: '#4f46e5',
-                        },
-                        dark: {
-                            light: '#334155',
-                            DEFAULT: '#1e293b',
-                            dark: '#0f172a',
-                        }
-                    },
+                    // colors: {
+                    //     primary: {
+                    //         light: '#5eead4',
+                    //         DEFAULT: '#14b8a6',
+                    //         dark: '#0d9488',
+                    //     },
+                    //     secondary: {
+                    //         light: '#a5b4fc',
+                    //         DEFAULT: '#6366f1',
+                    //         dark: '#4f46e5',
+                    //     },
+                    //     dark: {
+                    //         light: '#334155',
+                    //         DEFAULT: '#1e293b',
+                    //         dark: '#0f172a',
+                    //     }
+                    // },
                     animation: {
                         'float': 'float 6s ease-in-out infinite',
                         'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -36,7 +58,27 @@
                             '0%, 100%': { transform: 'translateY(0)' },
                             '50%': { transform: 'translateY(-20px)' },
                         }
+                    },
+
+                    // Option 2
+                    colors: {
+                        primary: {
+                            light: '#60a5fa',
+                            DEFAULT: '#3b82f6',
+                            dark: '#1d4ed8',
+                        },
+                        secondary: {
+                            light: '#facc15',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04',
+                        },
+                        dark: {
+                            light: '#1e293b',
+                            DEFAULT: '#0f172a',
+                            dark: '#0a0e1a',
+                        }
                     }
+
                 }
             }
         }
@@ -71,6 +113,86 @@
             font-weight: 700;
         }
     </style>
+
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --color-primary: #3b82f6;
+            --color-primary-light: #60a5fa;
+            --color-secondary: #eab308;
+            --color-dark: #0f172a;
+            --color-dark-light: #1e293b;
+            --color-text: #f8fafc;
+            --color-text-muted: #cbd5e1; /* Tailwind's slate-300 */
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 4rem; /* Offset for fixed navbar */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark);
+            color: var(--color-text);
+        }
+
+        /* Custom Scrollbar */
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+        body::-webkit-scrollbar-track {
+            background: var(--color-dark);
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: var(--color-dark-light);
+            border-radius: 20px;
+            border: 3px solid var(--color-dark);
+        }
+        body::-webkit-scrollbar-thumb:hover {
+            background-color: var(--color-primary);
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5); /* var(--color-dark-light) at 50% opacity */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+        }
+
+        /* Active Nav Link */
+        .nav-active {
+            color: var(--color-primary) !important;
+            font-weight: 700;
+        }
+
+        /* Skill Tags */
+        .skill-tag {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--color-text-muted);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background-color: rgba(59, 130, 246, 0.1); /* primary at 10% */
+            color: var(--color-primary);
+            border-color: rgba(59, 130, 246, 0.2); /* primary at 20% */
+            transform: translateY(-2px);
+        }
+    </style> -->
+    
 </head>
 <body class="antialiased">
     <div class="fixed inset-0 -z-10 overflow-hidden">
@@ -120,6 +242,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center pt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -133,13 +256,14 @@
                     <p class="text-lg text-gray-400 max-w-lg">
                         Transforming complex data into actionable insights through machine learning and artificial intelligence.
                     </p>
-                    <div class="flex space-x-4 pt-4">
-                        <a href="#projects" class="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center space-x-2">
-                            <span>View Projects</span>
-                            <i class="mdi mdi-arrow-right"></i>
+                    <div class="flex space-x-4 pt-4">                    
+                        <a href="#contact" class="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
+                            <span>Get In Touch</span>
+                            <i class="mdi mdi-email-outline"></i>
                         </a>
-                        <a href="#contact" class="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300">
-                            Contact Me
+                        <a href="/Mayank_CV.pdf" target="_blank" class="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
+                            <span>Download Resume</span>
+                            <i class="mdi mdi-download-outline"></i>
                         </a>
                     </div>
                 </div>
@@ -151,7 +275,7 @@
                         <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform -rotate-6"></div>
                         <div class="relative w-80 h-80 bg-dark rounded-2xl overflow-hidden border border-gray-700 shadow-2xl flex items-center justify-center">
                             <div class="text-9xl">
-                              <img src="1.png" alt="">
+                            <img src="1.png" alt="Abstract representation">
                             </div>
                         </div>
                     </div>
@@ -160,202 +284,312 @@
         </div>
     </section>
 
-    <section id="about" class="py-20">
+    <!-- About Section -->
+    <section id="about" class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A glimpse into my professional journey and what drives me.</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="glass-card p-8 rounded-2xl">
-                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
-                    <p class="text-gray-300 mb-6">
-                        I'm a passionate data scientist with expertise in machine learning, deep learning, and data engineering. 
-                        With a strong foundation in mathematics and computer science, I specialize in building intelligent 
-                        systems that extract meaningful insights from complex datasets.
-                    </p>
-                    <p class="text-gray-300 mb-6">
-                        My approach combines technical excellence with business acumen, ensuring that my solutions 
-                        deliver real value and impact. I thrive in interdisciplinary environments where I can apply 
-                        data science to solve challenging problems.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="flex items-center text-primary hover:text-primary-light">
-                            <i class="mdi mdi-file-account text-xl mr-2"></i>
-                            <span>Download CV</span>
-                        </a>
-                        <a href="https://github.com/mayankkantharia" target="_blank" class="flex items-center text-primary hover:text-primary-light">
-                            <i class="mdi mdi-github text-xl mr-2"></i>
-                            <span>GitHub Profile</span>
-                        </a>
+
+            <div class="glass-card p-8 md:p-12 rounded-3xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left side: Content -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+                                Data Scientist & AI Engineer
+                            </h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                I'm a passionate problem-solver with a knack for transforming complex data into intelligent, actionable insights. My expertise lies in machine learning, natural language processing, and full-stack development, allowing me to build end-to-end AI-powered solutions that drive real-world impact.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mt-4">
+                                From deploying robust ML models to collaborating in agile teams, I thrive on challenges and am in a constant state of learning to stay at the forefront of technology.
+                            </p>
+                        </div>
+                        <!-- <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <a href="#contact" class="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
+                                <span>Get In Touch</span>
+                                <i class="mdi mdi-email-outline"></i>
+                            </a>
+                            <a href="/Mayank_CV.pdf" target="_blank" class="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
+                                <span>Download Resume</span>
+                                <i class="mdi mdi-download-outline"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <!-- Right side: Stats -->
+                    <div class="grid grid-cols-2 gap-6 text-center">
+                        <div class="glass-card p-4 rounded-xl">
+                            <p class="text-3xl font-bold text-secondary">5+</p>
+                            <p class="mt-1 text-sm text-gray-400">Years Experience</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl">
+                            <p class="text-3xl font-bold text-secondary">50+</p>
+                            <p class="mt-1 text-sm text-gray-400">Projects Done</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl">
+                            <p class="text-3xl font-bold text-secondary">10+</p>
+                            <p class="mt-1 text-sm text-gray-400">Certifications</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl">
+                            <p class="text-3xl font-bold text-secondary">100K+</p>
+                            <p class="mt-1 text-sm text-gray-400">Lines of Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">         
+            <div class="text-center mb-16">
+                <!-- <h2 class="text-3xl font-bold mb-4">Technical <span class="gradient-text">Skills</span></h2> -->
+                <h2 class="text-3xl md:text-3xl font-bold mb-4">My Technical <span class="gradient-text">Arsenal</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A collection of tools and technologies I use to bring ideas to life.</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+
+            <div class="glass-card p-4 rounded-2xl backdrop-blur-md shadow-md border border-gray-700">
+            <div class="grid grid-cols-1  text-sm text-gray-300">
+                <!-- Data Science & AI -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                <div class="flex items-center">
+                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                        <i class="mdi mdi-brain text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Data Science & AI</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" class="h-5">
+                    <img src="https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white" alt="R" class="h-5">
+                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="h-5">
+                    <img src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="h-5">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="h-5">
+                    <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="h-5">
+                    <img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="h-5">
+                    <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="h-5">
+                    <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="h-5">
+                    <img src="https://img.shields.io/badge/Seaborn-30B7F5?logo=seaborn&logoColor=white" alt="Seaborn" class="h-5">
+                    <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau" class="h-5">
+                    <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black" alt="Power BI" class="h-5">
+                </div>
+                </div>
+
+                <!-- Databases & Storage -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                <div class="flex items-center">
+                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                    <i class="mdi mdi-database text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Databases & Storage</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL" class="h-5">
+                    <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white" alt="PostgreSQL" class="h-5">
+                    <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" class="h-5">
+                    <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite" class="h-5">
+                </div>
+                </div>
+
+                <!-- Cloud & Big Data -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                <div class="flex items-center">
+                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                    <i class="mdi mdi-cloud-outline text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Cloud & Big Data</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white" alt="AWS" class="h-5">
+                    <img src="https://img.shields.io/badge/Hadoop-66CCFF?logo=apache-hadoop&logoColor=white" alt="Hadoop" class="h-5">
+                    <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="h-5">
+                </div>
+                </div>
+
+                <!-- Full Stack Dev -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                <div class="flex items-center">
+                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                    <i class="mdi mdi-web text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Full Stack Dev</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" class="h-5">
+                    <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white" alt="Django" class="h-5">
+                    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React" class="h-5">
+                    <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white" alt="Flask" class="h-5">
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" class="h-5">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" class="h-5">
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" class="h-5">
+                    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind" class="h-5">
+                    <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white" alt="Bootstrap" class="h-5">
+                </div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                <div class="flex items-center">
+                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                    <i class="mdi mdi-cellphone text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Mobile App Development</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter" class="h-5">
+                    <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" alt="Dart" class="h-5">
+                </div>
+                </div>
+
+                <!-- Tools & DevOps -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4">
+                <div class="flex items-center">
+                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                    <i class="mdi mdi-tools text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold">Tools & DevOps</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="h-5">
+                    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" class="h-5">
+                    <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual-studio-code&logoColor=white" alt="VS Code" class="h-5">
+                    <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git" class="h-5">
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold mb-4">My Technical <span class="gradient-text">Arsenal</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A collection of tools and technologies I use to bring ideas to life.</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Skill Card: Data Science & AI -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-primary/20 transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="mdi mdi-brain text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Data Science & AI</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Tableau</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Full Stack Development -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-primary/20 transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="mdi mdi-web text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Full Stack Dev</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Databases & Cloud -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-primary/20 transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="mdi mdi-database text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Databases & Cloud</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Hadoop</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Mobile Development -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-primary/20 transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="mdi mdi-cellphone text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Mobile Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card: Tools & DevOps -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-primary/20 transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="mdi mdi-tools text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Tools & DevOps</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">CI/CD</span>
                     </div>
                 </div>
                 
-                <div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="glass-card p-6 rounded-xl">
-                            <div class="text-primary-light mb-2">
-                                <i class="mdi mdi-school text-3xl"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Education</h4>
-                            <p class="text-sm text-gray-400">
-                                Master's in Data Science with specialization in Machine Learning and AI.
-                            </p>
+                <!-- Skill Card: Soft Skills -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-primary/20 transition-shadow duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="mdi mdi-account-group-outline text-3xl text-primary"></i>
                         </div>
-                        <div class="glass-card p-6 rounded-xl">
-                            <div class="text-primary-light mb-2">
-                                <i class="mdi mdi-briefcase text-3xl"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Experience</h4>
-                            <p class="text-sm text-gray-400">
-                                5+ years building data products and machine learning solutions.
-                            </p>
-                        </div>
-                        <div class="glass-card p-6 rounded-xl">
-                            <div class="text-primary-light mb-2">
-                                <i class="mdi mdi-database text-3xl"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Data Processed</h4>
-                            <p class="text-sm text-gray-400">
-                                TBs of structured and unstructured data across domains.
-                            </p>
-                        </div>
-                        <div class="glass-card p-6 rounded-xl">
-                            <div class="text-primary-light mb-2">
-                                <i class="mdi mdi-chart-bar text-3xl"></i>
-                            </div>
-                            <h4 class="font-semibold mb-2">Models Built</h4>
-                            <p class="text-sm text-gray-400">
-                                50+ production-grade ML models deployed.
-                            </p>
-                        </div>
+                        <h3 class="text-xl font-semibold text-white">Professional Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Agile Methodology</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Project Management</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-20 bg-gradient-to-b from-dark-dark to-dark text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold mb-4">Technical <span class="gradient-text">Skills</span></h2>
-          <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
-        </div>
-
-        <div class="glass-card p-6 rounded-2xl backdrop-blur-md shadow-md border border-gray-700 ">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 text-sm text-gray-300">
-
-            <div>
-              <div class="flex items-center mb-4">
-                <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                  <i class="mdi mdi-brain text-3xl text-primary"></i>
-                </div>
-                <h3 class="text-lg font-semibold">Data Science & AI</h3>
-              </div>
-              <ul class="space-y-2">
-                  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" class="h-5">
-                  <img src="https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white" alt="R" class="h-5">
-                  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="h-5">
-                  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="h-5">
-                  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="h-5">                  
-                  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="h-5">                  
-                  <img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="h-5">                  
-                  <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="h-5">                  
-                  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="h-5">                  
-                  <img src="https://img.shields.io/badge/Seaborn-30B7F5?logo=seaborn&logoColor=white" alt="Seaborn" class="h-5">
-                  <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau" class="h-5">                  
-                  <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black" alt="Power BI" class="h-5">                  
-              </ul>
-            </div>
-
-            <div>
-              <div class="flex items-center mb-4">
-                <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                  <i class="mdi mdi-database text-3xl text-primary"></i>
-                </div>
-                <h3 class="text-lg font-semibold">Databases & Storage</h3>
-              </div>
-              <ul class="space-y-2">
-                <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL" class="h-5">
-                <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white" alt="PostgreSQL" class="h-5">
-                <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" class="h-5">
-                <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite" class="h-5">
-              </ul>
-            </div>
-
-            <div>
-              <div class="flex items-center mb-4">
-                <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                  <i class="mdi mdi-cloud-outline text-3xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-semibold">Cloud & Big Data</h3>
-              </div>
-              <ul class="space-y-2">
-                <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white" alt="AWS" class="h-5">                
-                <img src="https://img.shields.io/badge/Hadoop-66CCFF?logo=apache-hadoop&logoColor=white" alt="Hadoop" class="h-5">
-                <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="h-5">
-
-              </ul>
-            </div>
-
-            <div>
-              <div class="flex items-center mb-4">
-                <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                  <i class="mdi mdi-web text-3xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-semibold">Full Stack Dev</h3>
-              </div>
-              <ul class="space-y-2">
-                <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" class="h-5">
-                <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white" alt="Django" class="h-5">
-                <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React" class="h-5">
-                <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white" alt="Flask" class="h-5">
-                <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" class="h-5">
-                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" class="h-5">
-                <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" class="h-5">
-                <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind" class="h-5">
-                <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white" alt="Bootstrap" class="h-5">
-              </ul>
-            </div>
-
-            <div>
-              <div class="flex items-center mb-4">
-                  <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                      <i class="mdi mdi-cellphone text-3xl text-primary"></i>
-                  </div>
-                  <h3 class="text-xl font-semibold">Mobile App Development</h3>
-              </div>
-              <ul class="space-y-2">              
-                <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter" class="h-5">                            
-                <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" alt="Dart" class="h-5">              
-              </ul>
-            </div>
-
-            <div>
-              <div class="flex items-center mb-4">
-                  <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                      <i class="mdi mdi-tools text-3xl text-primary"></i>
-                  </div>
-                  <h3 class="text-xl font-semibold">Tools & DevOps</h3>
-              </div>
-              <ul class="space-y-2">                
-                <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="h-5">                                
-                <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" class="h-5">                                
-                <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual-studio-code&logoColor=white" alt="VS Code" class="h-5">                                
-                <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git" class="h-5">                
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="projects" class="py-20">
+    <section id="projects" class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-14">
                 <h2 class="text-3xl font-bold mb-4">Featured <span class="gradient-text">Projects</span></h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
             </div>
@@ -455,101 +689,220 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-gradient-to-b from-dark to-dark-dark">
+    <section id="projects" class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold mb-4">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A selection of my work, from deep learning models to full-stack applications.</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Project Card 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden h-full flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+                    <div class="relative p-6 flex-grow flex flex-col">
+                        <div class="flex-shrink-0 mb-4">
+                            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="mdi mdi-brain text-4xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-xl font-semibold text-white">Brain Tumor Detection</h3>
+                                <span class="text-xs bg-secondary/10 text-secondary px-2 py-1 rounded-full font-medium whitespace-nowrap">Deep Learning</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                A 3D CNN model for detecting and classifying brain tumors from MRI scans, achieving 96% accuracy.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-auto pt-4 border-t border-white/10">
+                            <a href="#" class="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                                <i class="mdi mdi-github mr-2"></i> View Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                                <i class="mdi mdi-open-in-new mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden h-full flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+                    <div class="relative p-6 flex-grow flex flex-col">
+                        <div class="flex-shrink-0 mb-4">
+                            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="mdi mdi-chart-line text-4xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-xl font-semibold text-white">Stock Price Prediction</h3>
+                                <span class="text-xs bg-secondary/10 text-secondary px-2 py-1 rounded-full font-medium whitespace-nowrap">Time Series</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                LSTM-based model for stock price prediction, incorporating sentiment analysis from financial news.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">NLP</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-auto pt-4 border-t border-white/10">
+                            <a href="#" class="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                                <i class="mdi mdi-github mr-2"></i> View Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                                <i class="mdi mdi-open-in-new mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden h-full flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+                    <div class="relative p-6 flex-grow flex flex-col">
+                        <div class="flex-shrink-0 mb-4">
+                            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="mdi mdi-robot-happy-outline text-4xl text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-3">
+                                <h3 class="text-xl font-semibold text-white">AI Chatbot Assistant</h3>
+                                <span class="text-xs bg-secondary/10 text-secondary px-2 py-1 rounded-full font-medium">NLP</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">
+                                A context-aware chatbot using a transformer architecture, fine-tuned with domain-specific knowledge.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">HuggingFace</span>
+                                <span class="skill-tag">Flask</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-auto pt-4 border-t border-white/10">
+                            <a href="#" class="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                                <i class="mdi mdi-github mr-2"></i> View Code
+                            </a>
+                            <a href="#" class="text-primary hover:text-primary-light font-medium text-sm flex items-center">
+                                <i class="mdi mdi-open-in-new mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#" class="inline-flex items-center px-8 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300">
+                    <span>View All Projects</span>
+                    <i class="mdi mdi-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
                 <h2 class="text-3xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                                <i class="mdi mdi-email text-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <a href="mailto:mayankkantharia01@gmail.com" class="text-gray-400 hover:text-primary transition">mayankkantharia01@gmail.com</a>
-                            </div>
+            <div class="glass-card p-8 md:p-12 rounded-3xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 text-white">Let's Connect</h3>
+                            <p class="text-gray-400 leading-relaxed">
+                                I'm currently available for freelance work and open to discussing new projects. Whether you have a question or just want to say hi, feel free to reach out. I'll do my best to get back to you!
+                            </p>
                         </div>
                         
-                        <div class="flex items-start">
-                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                                <i class="mdi mdi-github text-primary text-xl"></i>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-primary/10 p-3 rounded-full">
+                                    <i class="mdi mdi-email-outline text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white">Email</h4>
+                                    <a href="mailto:mayankkantharia01@gmail.com" class="text-gray-400 hover:text-primary transition">mayankkantharia01@gmail.com</a>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-medium">GitHub</h4>
-                                <a href="https://github.com/mayankkantharia" target="_blank" class="text-gray-400 hover:text-primary transition">github.com/mayankkantharia</a>
+                             <div class="flex items-center space-x-4">
+                                <div class="bg-primary/10 p-3 rounded-full">
+                                    <i class="mdi mdi-linkedin text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-white">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" class="text-gray-400 hover:text-primary transition">linkedin.com/in/mayankkantharia</a>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                                <i class="mdi mdi-linkedin text-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-medium">LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" class="text-gray-400 hover:text-primary transition">linkedin.com/in/mayankkantharia</a>
+
+                        <div class="pt-6">
+                            <h3 class="text-xl font-semibold mb-4 text-white">Follow Me</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/mayankkantharia" target="_blank" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                    <i class="mdi mdi-github text-2xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                    <i class="mdi mdi-linkedin text-2xl"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                    <i class="mdi mdi-twitter text-2xl"></i>
+                                </a>
+                                 <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                    <i class="mdi mdi-instagram text-2xl"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- <div class="mt-10">
-                        <h3 class="text-xl font-semibold mb-6">Follow Me</h3>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                <i class="mdi mdi-twitter text-xl"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                <i class="mdi mdi-linkedin text-xl"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                <i class="mdi mdi-github text-xl"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                <i class="mdi mdi-medium text-xl"></i>
-                            </a>
-                        </div>
-                    </div> -->
-                </div>
-                
-                <div>
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium mb-1">Name</label>
-                            <input type="text" id="name" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium mb-1">Email</label>
-                            <input type="email" id="email" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
-                                                        <input type="text" id="subject" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                        </div>
+                    <div>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                            </div>
 
-                        <div>
-                            <label for="message" class="block text-sm font-medium mb-1">Message</label>
-                            <textarea id="message" rows="5" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-                        </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" rows="5" class="w-full bg-dark-light border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"></textarea>
+                            </div>
 
-                        <div>
-                            <button type="submit" class="w-full px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
+                            <div>
+                                <button type="submit" class="w-full px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
+                                    <span>Send Message</span>
+                                    <i class="mdi mdi-send"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <footer class="py-6 border-t border-gray-800 text-center text-sm text-gray-500 bg-dark">
         <p>&copy; 2025 Mayank Kantharia. All rights reserved.</p>
     </footer>
