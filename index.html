@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="" href="1.png">
+    <link rel="icon" type="" href="1.jpeg">
     <title>Mayank Kantharia | Data Scientist & AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
@@ -12,23 +12,6 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    // colors: {
-                    //     primary: {
-                    //         light: '#5eead4',
-                    //         DEFAULT: '#14b8a6',
-                    //         dark: '#0d9488',
-                    //     },
-                    //     secondary: {
-                    //         light: '#a5b4fc',
-                    //         DEFAULT: '#6366f1',
-                    //         dark: '#4f46e5',
-                    //     },
-                    //     dark: {
-                    //         light: '#334155',
-                    //         DEFAULT: '#1e293b',
-                    //         dark: '#0f172a',
-                    //     }
-                    // },
                     animation: {
                         'float': 'float 6s ease-in-out infinite',
                         'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -39,8 +22,6 @@
                             '50%': { transform: 'translateY(-20px)' },
                         }
                     },
-
-                    // Option 2
                     colors: {
                         primary: {
                             light: '#60a5fa',
@@ -67,7 +48,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         html {
             scroll-behavior: smooth;
-            /* Add padding to the top to offset the fixed navbar */
             scroll-padding-top: 4rem;
         }
         body {
@@ -87,11 +67,6 @@
             color: transparent;
             background-image: linear-gradient(90deg, #14b8a6, #6366f1);
         }
-        /* Style for the active navigation link */
-        /* .nav-active {
-            color: #5eead4 !important; 
-            font-weight: 700;
-        } */
         .nav-active {
             color: #3b82f6 !important;
             font-weight: 700;
@@ -113,88 +88,9 @@
             border-color: rgba(94, 234, 212, 0.2);
             transform: translateY(-2px);
         }
-
     </style>
 
-    <!-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-        :root {
-            --color-primary: #3b82f6;
-            --color-primary-light: #60a5fa;
-            --color-secondary: #eab308;
-            --color-dark: #0f172a;
-            --color-dark-light: #1e293b;
-            --color-text: #f8fafc;
-            --color-text-muted: #cbd5e1; /* Tailwind's slate-300 */
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 4rem; /* Offset for fixed navbar */
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--color-dark);
-            color: var(--color-text);
-        }
-
-        /* Custom Scrollbar */
-        body::-webkit-scrollbar {
-            width: 12px;
-        }
-        body::-webkit-scrollbar-track {
-            background: var(--color-dark);
-        }
-        body::-webkit-scrollbar-thumb {
-            background-color: var(--color-dark-light);
-            border-radius: 20px;
-            border: 3px solid var(--color-dark);
-        }
-        body::-webkit-scrollbar-thumb:hover {
-            background-color: var(--color-primary);
-        }
-
-        .glass-card {
-            background: rgba(30, 41, 59, 0.5); /* var(--color-dark-light) at 50% opacity */
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-        }
-
-        /* Active Nav Link */
-        .nav-active {
-            color: var(--color-primary) !important;
-            font-weight: 700;
-        }
-
-        /* Skill Tags */
-        .skill-tag {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.05);
-            color: var(--color-text-muted);
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-        .skill-tag:hover {
-            background-color: rgba(59, 130, 246, 0.1); /* primary at 10% */
-            color: var(--color-primary);
-            border-color: rgba(59, 130, 246, 0.2); /* primary at 20% */
-            transform: translateY(-2px);
-        }
-    </style> -->
-    
 </head>
 <body class="antialiased">
     <div class="fixed inset-0 -z-10 overflow-hidden">
@@ -274,8 +170,7 @@
                         <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl transform -rotate-6"></div>
                         <div class="relative w-80 h-80 bg-dark rounded-2xl overflow-hidden border border-gray-700 shadow-2xl flex items-center justify-center">
                             <div class="text-9xl">
-                            <!-- <img src="1.png" alt="Abstract representation"> -->
-                            <img src="1.jpeg" alt="Abstract representation" class="brightness-120 opacity-60">
+                                <img src="1.jpeg" alt="Abstract representation" class="brightness-120 opacity-60">
                             </div>
                         </div>
                     </div>
@@ -730,6 +625,8 @@
                 observer.observe(section);
             });
         });
+
     </script>
+
 </body>
 </html>
