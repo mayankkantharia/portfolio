@@ -75,7 +75,7 @@
         .skill-tag {
             display: inline-block;
             background-color: rgba(255, 255, 255, 0.05);
-            color: #cbd5e1; /* slate-300 */
+            color: #cbd5e1;
             padding: 0.5rem 1rem;
             border-radius: 9999px;
             font-size: 0.875rem;
@@ -84,9 +84,12 @@
         }
         .skill-tag:hover {
             background-color: rgba(94, 234, 212, 0.1);
-            color: #5eead4; /* primary */
+            color: #5eead4;
             border-color: rgba(94, 234, 212, 0.2);
             transform: translateY(-2px);
+        }
+        #tagline {
+            transition: opacity 0.5s ease-in-out;
         }
     </style>
 
@@ -148,8 +151,8 @@
                     <h2 class="text-xl md:text-2xl text-gray-300">
                         Data Scientist
                     </h2>
-                    <p class="text-lg text-gray-400 max-w-lg">
-                        Transforming complex data into actionable insights through machine learning and artificial intelligence.
+                    <p id="tagline" class="text-lg text-gray-400 max-w-lg">
+                        From raw data to actionable intelligence — powered by machine learning and AI.
                     </p>
                     <div class="flex space-x-4 pt-4">                    
                         <a href="#contact" class="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
@@ -183,61 +186,40 @@
     <section id="about" class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                <h2 class="text-3xl md:text-3xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">A glimpse into my professional journey and what drives me.</p>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
             </div>
 
-            <div class="glass-card p-8 md:p-12 rounded-3xl">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Left side: Content -->
-                    <div class="space-y-8">
-                        <div>
-                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
-                                Data Scientist & AI Engineer
-                            </h3>
-                            <p class="text-gray-300 leading-relaxed">
-                                I'm a passionate problem-solver with a knack for transforming complex data into intelligent, actionable insights. My expertise lies in machine learning, natural language processing, and full-stack development, allowing me to build end-to-end AI-powered solutions that drive real-world impact.
-                            </p>
-                            <p class="text-gray-300 leading-relaxed mt-4">
-                                From deploying robust ML models to collaborating in agile teams, I thrive on challenges and am in a constant state of learning to stay at the forefront of technology.
-                            </p>
-                        </div>
-                        <!-- <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                            <a href="#contact" class="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
-                                <span>Get In Touch</span>
-                                <i class="mdi mdi-email-outline"></i>
-                            </a>
-                            <a href="/Mayank_CV.pdf" target="_blank" class="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
-                                <span>Download Resume</span>
-                                <i class="mdi mdi-download-outline"></i>
-                            </a>
-                        </div> -->
-                    </div>
-                    <!-- Right side: Stats -->
-                    <div class="grid grid-cols-2 gap-6 text-center">
-                        <div class="glass-card p-4 rounded-xl ">
-                            <p class="text-3xl font-bold text-secondary">5+</p>
-                            <p class="mt-1 text-sm text-gray-400">Years Experience</p>
-                        </div>
-                        <div class="glass-card p-4 rounded-xl">
-                            <p class="text-3xl font-bold text-secondary">50+</p>
-                            <p class="mt-1 text-sm text-gray-400">Projects Done</p>
-                        </div>
-                        <div class="glass-card p-4 rounded-xl">
-                            <p class="text-3xl font-bold text-secondary">10+</p>
-                            <p class="mt-1 text-sm text-gray-400">Certifications</p>
-                        </div>
-                        <div class="glass-card p-4 rounded-xl">
-                            <p class="text-3xl font-bold text-secondary">100K+</p>
-                            <p class="mt-1 text-sm text-gray-400">Lines of Code</p>
-                        </div>
-                    </div>
+            <!-- <div class="glass-card p-8 rounded-2xl"> -->
+            <div class="glass-card px-6 py-4 md:p-12 rounded-3xl">
+                <div class="space-y-6">
+                    <p class="text-gray-300 leading-relaxed text-justify">
+                        I am currently pursuing my <strong>Master of Data Science</strong> at <strong>RMIT University</strong>, 
+                        where I focus on turning complex datasets into clear, actionable insights. My studies and projects 
+                        have strengthened my expertise in <strong>machine learning, deep learning, big data analytics, cloud computing, 
+                        and data visualisation</strong>, enabling me to solve real-world problems with precision and creativity.
+                    </p>
+                    
+                    <p class="text-gray-300 leading-relaxed text-justify">
+                        With a <strong>Bachelor’s degree in Computer Engineering</strong> from Mumbai University, I bring a strong foundation 
+                        in programming, database management, and software development. I have completed impactful projects in 
+                        <strong>deep learning, machine learning, and web/app development</strong>, applying cutting-edge technologies 
+                        to build scalable and intelligent solutions.
+                    </p>
+
+                    <p class="text-gray-300 leading-relaxed text-justify">
+                        I am passionate about leveraging data to drive innovation — whether it's building predictive models, 
+                        creating intelligent applications, or exploring emerging areas such as natural language processing and computer vision. 
+                        I thrive in environments that demand both analytical thinking and creative problem-solving, 
+                        and I am committed to continuous learning to stay ahead in the evolving data landscape.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">         
             <div class="text-center mb-16">
@@ -247,125 +229,124 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4"></div>
             </div>
 
-            <!-- <div class="glass-card p-4 rounded-2xl backdrop-blur-md shadow-md border border-gray-700">
-            <div class="grid grid-cols-1  text-sm text-gray-300"> -->
-            <div class="glass-card p-8 md:p-12 rounded-3xl">
-            <div class="grid grid-cols-1 text-sm">
-                <!-- Data Science & AI -->
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+            <div class="glass-card px-6 py-4 md:p-12 rounded-3xl">
+                <div class="grid grid-cols-1 text-sm">
+                    <!-- Data Science -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                        <div class="flex items-center">
+                            <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                                <i class="mdi mdi-brain text-3xl text-primary"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold">Data Science</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" class="h-5">
+                            <img src="https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white" alt="R" class="h-5">
+                            <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="h-5">
+                            <img src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="h-5">
+                            <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="h-5">
+                            <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="h-5">
+                            <img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="h-5">
+                            <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="h-5">
+                            <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="h-5">
+                            <img src="https://img.shields.io/badge/Seaborn-30B7F5?logo=seaborn&logoColor=white" alt="Seaborn" class="h-5">
+                            <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau" class="h-5">
+                            <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black" alt="Power BI" class="h-5">
+                        </div>
+                    </div>
+
+                    <!-- Databases & Storage -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                        <div class="flex items-center">
+                            <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                            <i class="mdi mdi-database text-3xl text-primary"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold">Databases & Storage</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL" class="h-5">
+                            <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" class="h-5">
+                            <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite" class="h-5">
+                            <!-- For Firebase -->
+                            <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black" alt="Firebase" class="h-5">
+                            <!-- For Hive -->
+                            <img src="https://img.shields.io/badge/Hive-D50000?logo=apache-hive&logoColor=white" alt="Hive" class="h-5">
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Big Data -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
                     <div class="flex items-center">
                         <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                            <i class="mdi mdi-brain text-3xl text-primary"></i>
+                        <i class="mdi mdi-cloud-outline text-3xl text-primary"></i>
                         </div>
-                        <h3 class="text-lg font-semibold">Data Science & AI</h3>
+                        <h3 class="text-lg font-semibold">Cloud & Big Data</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" class="h-5">
-                        <img src="https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white" alt="R" class="h-5">
-                        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" class="h-5">
-                        <img src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit-learn" class="h-5">
-                        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch" class="h-5">
-                        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" class="h-5">
-                        <img src="https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white" alt="Keras" class="h-5">
-                        <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas" class="h-5">
-                        <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy" class="h-5">
-                        <img src="https://img.shields.io/badge/Seaborn-30B7F5?logo=seaborn&logoColor=white" alt="Seaborn" class="h-5">
-                        <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau" class="h-5">
-                        <img src="https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black" alt="Power BI" class="h-5">
+                        <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white" alt="AWS" class="h-5">
+                        <img src="https://img.shields.io/badge/Hadoop-66CCFF?logo=apache-hadoop&logoColor=white" alt="Hadoop" class="h-5">
+                        <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="h-5">
+                        <!-- for apache spark -->
+                        <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?logo=apache-spark&logoColor=white" alt="Apache Spark" class="h-5">
                     </div>
-                </div>
+                    </div>
 
-                <!-- Databases & Storage -->
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                    <!-- Full Stack Development -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
                     <div class="flex items-center">
                         <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                        <i class="mdi mdi-database text-3xl text-primary"></i>
+                        <i class="mdi mdi-web text-3xl text-primary"></i>
                         </div>
-                        <h3 class="text-lg font-semibold">Databases & Storage</h3>
+                        <h3 class="text-lg font-semibold">Full Stack Development</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL" class="h-5">
-                        <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" alt="MongoDB" class="h-5">
-                        <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite" class="h-5">
-                        <!-- For Firebase -->
-                        <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black" alt="Firebase" class="h-5">
-                        <!-- For Hive -->
-                        <img src="https://img.shields.io/badge/Hive-D50000?logo=apache-hive&logoColor=white" alt="Hive" class="h-5">
+                        <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" class="h-5">
+                        <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white" alt="Django" class="h-5">
+                        <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React" class="h-5">
+                        <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white" alt="Flask" class="h-5">
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" class="h-5">
+                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" class="h-5">
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" class="h-5">
+                        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind" class="h-5">
+                        <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white" alt="Bootstrap" class="h-5">
                     </div>
-                </div>
+                    </div>
 
-                <!-- Cloud & Big Data -->
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
-                <div class="flex items-center">
-                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                    <i class="mdi mdi-cloud-outline text-3xl text-primary"></i>
+                    <!-- Mobile App Development -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
+                    <div class="flex items-center">
+                        <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                        <i class="mdi mdi-cellphone text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Mobile App Development</h3>
                     </div>
-                    <h3 class="text-lg font-semibold">Cloud & Big Data</h3>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white" alt="AWS" class="h-5">
-                    <img src="https://img.shields.io/badge/Hadoop-66CCFF?logo=apache-hadoop&logoColor=white" alt="Hadoop" class="h-5">
-                    <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" class="h-5">
-                    <!-- for apache spark -->
-                    <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?logo=apache-spark&logoColor=white" alt="Apache Spark" class="h-5">
-                </div>
-                </div>
+                    <div class="flex flex-wrap gap-2">
+                        <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter" class="h-5">
+                        <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" alt="Dart" class="h-5">
+                    </div>
+                    </div>
 
-                <!-- Full Stack Dev -->
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
-                <div class="flex items-center">
-                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                    <i class="mdi mdi-web text-3xl text-primary"></i>
+                    <!-- Tools -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4">
+                    <div class="flex items-center">
+                        <div class="bg-primary/10 p-2 rounded-lg mr-3">
+                        <i class="mdi mdi-tools text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Tools</h3>
                     </div>
-                    <h3 class="text-lg font-semibold">Full Stack Dev</h3>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" class="h-5">
-                    <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white" alt="Django" class="h-5">
-                    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React" class="h-5">
-                    <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white" alt="Flask" class="h-5">
-                    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" class="h-5">
-                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" class="h-5">
-                    <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" class="h-5">
-                    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind" class="h-5">
-                    <img src="https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white" alt="Bootstrap" class="h-5">
-                </div>
-                </div>
-
-                <!-- Mobile App Development -->
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 border-b border-gray-700">
-                <div class="flex items-center">
-                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                    <i class="mdi mdi-cellphone text-3xl text-primary"></i>
+                    <div class="flex flex-wrap gap-2">
+                        <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="h-5">
+                        <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" class="h-5">
+                        <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual-studio-code&logoColor=white" alt="VS Code" class="h-5">
+                        <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git" class="h-5">
                     </div>
-                    <h3 class="text-lg font-semibold">Mobile App Development</h3>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter" class="h-5">
-                    <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" alt="Dart" class="h-5">
-                </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4">
-                <div class="flex items-center">
-                    <div class="bg-primary/10 p-2 rounded-lg mr-3">
-                    <i class="mdi mdi-tools text-3xl text-primary"></i>
                     </div>
-                    <h3 class="text-lg font-semibold">Tools</h3>
                 </div>
-                <div class="flex flex-wrap gap-2">
-                    <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="h-5">
-                    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" class="h-5">
-                    <img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visual-studio-code&logoColor=white" alt="VS Code" class="h-5">
-                    <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git" class="h-5">
-                </div>
-                </div>
-            </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="py-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
@@ -474,56 +455,51 @@
                 <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
             </div>
             
-            <div class="glass-card p-8 md:p-12 rounded-3xl">
+            <div class="glass-card p-6 md:p-12 rounded-3xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="space-y-8">
+                    <div class="flex flex-col justify-between h-full space-y-8">
                         <div>
                             <h3 class="text-2xl font-semibold mb-4 text-white">Let's Connect</h3>
-                            <p class="text-gray-400 leading-relaxed">
-                                I'm currently available for freelance work and open to discussing new projects. Whether you have a question or just want to say hi, feel free to reach out. I'll do my best to get back to you!
+                            <p class="text-gray-400 leading-relaxed text-justify">
+                                Finishing my Master’s in Data Science 🎓 and ready to turn data into impact. 
+                                Actively seeking opportunities in data science, machine learning, and AI — 
+                                let’s collaborate and make something amazing!
                             </p>
                         </div>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                    <i class="mdi mdi-email-outline text-2xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-white">Email</h4>
-                                    <a href="mailto:mayankkantharia01@gmail.com" class="text-gray-400 hover:text-primary transition">mayankkantharia01@gmail.com</a>
-                                </div>
+
+                        <div class="flex items-center space-x-4">
+                            <a href="mailto:mayankkantharia01@gmail.com"
+                                class="w-12 h-12 flex-shrink-0 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                <i class="mdi mdi-email-outline text-2xl"></i>
+                            </a>
+                            <div class="flex flex-col justify-center min-w-0">
+                                <h4 class="font-medium text-white">Email</h4>
+                                <p class="text-gray-400 hover:text-primary transition break-words leading-relaxed">
+                                    <a href="mailto:mayankkantharia01@gmail.com">mayankkantharia01@gmail.com</a>
+                                </p>
                             </div>
-                            <!-- <div class="flex items-center space-x-4">
-                                <div class="bg-primary/10 p-3 rounded-full">
-                                    <i class="mdi mdi-linkedin text-primary text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-white">LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" class="text-gray-400 hover:text-primary transition">linkedin.com/in/mayankkantharia</a>
-                                </div>
-                            </div> -->
                         </div>
 
-                        <div class="pt-6">
-                            <h3 class="text-xl font-semibold mb-4 text-white">Follow Me</h3>
-                            <div class="flex space-x-4">
-                                <a href="https://github.com/mayankkantharia" target="_blank" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                    <i class="mdi mdi-github text-2xl"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                    <i class="mdi mdi-linkedin text-2xl"></i>
-                                </a>
-                                <!-- <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                    <i class="mdi mdi-twitter text-2xl"></i>
-                                </a> -->
-                                 <a href="#" class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
-                                    <i class="mdi mdi-instagram text-2xl"></i>
-                                </a>
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4 text-white">Follow Me</h3>
+                                <div class="flex space-x-4">
+                                    <a href="https://github.com/mayankkantharia" target="_blank"
+                                    class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                        <i class="mdi mdi-github text-2xl"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank"
+                                    class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                        <i class="mdi mdi-linkedin text-2xl"></i>
+                                    </a>
+                                    <a href="#"
+                                    class="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
+                                        <i class="mdi mdi-instagram text-2xl"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
                     <div>
                         <form class="space-y-6">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -565,6 +541,24 @@
     </footer>
 
     <script>
+        const taglines = [
+            "From raw data to actionable intelligence - powered by machine learning and AI 🤖.",
+            "Turning complex datasets into smarter decisions and real-world impact 🌍.",
+            "Driving innovation through data science, machine learning, and AI 🚀.",
+            "Unlocking insights that power better strategies and solutions 🔑.",
+        ];
+
+        let index = 0;
+        setInterval(() => {
+            const taglineEl = document.getElementById("tagline");
+            taglineEl.style.opacity = 0;
+            setTimeout(() => {
+                index = (index + 1) % taglines.length;
+                taglineEl.textContent = taglines[index];
+                taglineEl.style.opacity = 1;
+            }, 1000);
+        }, 4000);
+
         document.addEventListener('DOMContentLoaded', () => {
             // --- Mobile Menu Toggle ---
             const menuButton = document.getElementById('mobile-menu-button');
@@ -625,8 +619,6 @@
                 observer.observe(section);
             });
         });
-
     </script>
-
 </body>
 </html>
