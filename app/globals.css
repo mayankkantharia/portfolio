@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+:root {
+  --color-primary-light: #60a5fa;
+  --color-primary: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary-light: #facc15;
+  --color-secondary: #eab308;
+  --color-secondary-dark: #ca8a04;
+  --color-dark-light: #1e293b;
+  --color-dark: #0f172a;
+  --color-dark-dark: #0a0e1a;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-dark-light {
+  background-color: var(--color-dark-light);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.hover\:text-primary-light:hover {
+  color: var(--color-primary-light);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.hover\:bg-primary\/10:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.bg-primary\/20 {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.bg-primary\/10 {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.bg-secondary\/20 {
+  background-color: rgba(234, 179, 8, 0.2);
+}
+
+.bg-linear-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-linear-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-primary {
+  --tw-gradient-from: var(--color-primary);
+  --tw-gradient-to: rgba(59, 130, 246, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary\/20 {
+  --tw-gradient-from: rgba(59, 130, 246, 0.2);
+  --tw-gradient-to: rgba(59, 130, 246, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-secondary {
+  --tw-gradient-to: var(--color-secondary);
+}
+
+.to-secondary\/20 {
+  --tw-gradient-to: rgba(234, 179, 8, 0.2);
+}
+
+.from-dark-dark\/50 {
+  --tw-gradient-from: rgba(10, 14, 26, 0.5);
+  --tw-gradient-to: rgba(10, 14, 26, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-dark-dark\/80 {
+  --tw-gradient-to: rgba(10, 14, 26, 0.8);
+}
+
+.hover\:shadow-primary\/20:hover {
+  box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.2);
+}
+
+.brightness-120 {
+  filter: brightness(1.2);
+}
+
+.bg-grid-dark {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.glass-card {
+  background-color: rgba(15, 23, 42, 0.68);
+  backdrop-filter: saturate(150%) blur(20px);
+  -webkit-backdrop-filter: saturate(150%) blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-clip: padding-box;
+  box-shadow: 0 12px 32px -12px rgba(15, 23, 42, 0.45);
+}
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #14b8a6, #6366f1);
+}
+.nav-active {
+  color: #3b82f6 !important;
+  font-weight: 700;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.skill-tag:hover {
+  background-color: rgba(94, 234, 212, 0.1);
+  color: #5eead4;
+  border-color: rgba(94, 234, 212, 0.2);
+  transform: translateY(-2px);
+}
