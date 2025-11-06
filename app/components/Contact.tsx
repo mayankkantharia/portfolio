@@ -30,14 +30,14 @@ const Contact = () => {
                             </div>
 
                             <div className="flex items-center space-x-4">
-                                <a href="mailto:mayankkantharia01@gmail.com"
+                                <a href="mailto:mayankkantharia01@gmail.com" target="_blank" rel="noopener noreferrer"
                                     className="w-12 h-12 shrink-0 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
                                     <i className="mdi mdi-email-outline text-2xl"></i>
                                 </a>
                                 <div className="flex flex-col justify-center min-w-0">
                                     <h4 className="font-medium text-white">Email</h4>
                                     <p className="text-gray-400 hover:text-primary transition wrap-break-word leading-relaxed">
-                                        <a href="mailto:mayankkantharia01@gmail.com">mayankkantharia01@gmail.com</a>
+                                        <a href="mailto:mayankkantharia01@gmail.com" target="_blank" rel="noopener noreferrer">mayankkantharia01@gmail.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -46,15 +46,15 @@ const Contact = () => {
                                 <div>
                                     <h3 className="text-xl font-semibold mb-4 text-white">Follow Me</h3>
                                     <div className="flex space-x-4">
-                                        <a href="https://github.com/mayankkantharia" target="_blank"
+                                        <a href="https://github.com/mayankkantharia" target="_blank" rel="noopener noreferrer"
                                         className="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
                                             <i className="mdi mdi-github text-2xl"></i>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank"
+                                        <a href="https://www.linkedin.com/in/mayankkantharia/" target="_blank" rel="noopener noreferrer"
                                         className="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
                                             <i className="mdi mdi-linkedin text-2xl"></i>
                                         </a>
-                                        <a href="https://www.instagram.com/mayankkantharia" target="_blank"
+                                        <a href="https://www.instagram.com/mayankkantharia" target="_blank" rel="noopener noreferrer"
                                         className="w-12 h-12 rounded-full bg-dark-light hover:bg-primary/10 border border-gray-700 flex items-center justify-center transition">
                                             <i className="mdi mdi-instagram text-2xl"></i>
                                         </a>

@@ -41,7 +41,7 @@ const Hero = () => {
                                 <span>Get In Touch</span>
                                 <i className="mdi mdi-email-outline"></i>
                             </a>
-                            <a href="/Resume Mayank Kantharia - Australia.pdf" target="_blank" className="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
+                            <a href="/Resume Mayank Kantharia - Australia.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-primary text-primary hover:bg-primary/10 rounded-lg font-medium transition duration-300 flex items-center justify-center space-x-2">
                                 <span>Download Resume</span>
                                 <i className="mdi mdi-download-outline"></i>
                             </a>
